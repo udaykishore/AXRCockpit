@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="mic_on_color">#4CAF50</color> <!-- Greenish -->
+    <color name="mic_off_color">#F44336</color> <!-- Reddish -->
+
+    <!-- Google-friendly colors -->
+    <color name="google_blue_500">#2196F3</color>
+    <color name="google_blue_700">#1976D2</color>
+    <color name="google_amber_500">#FFC107</color>
+    <color name="google_red_500">#F44336</color>
+    <color name="google_green_500">#4CAF50</color>
+</resources>
