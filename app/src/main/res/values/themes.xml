@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.AXRCockpit" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/google_blue_500</item>
+        <item name="colorPrimaryVariant">@color/google_blue_700</item>
+        <item name="colorSecondary">@color/google_amber_500</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnSecondary">@color/black</item>
+    </style>
+
+    <style name="Theme.AXRCockpit" parent="Base.Theme.AXRCockpit" />
+</resources>
