@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">AXR Cockpit</string>
+    <string name="enter_command">Enter command</string>
+    <string name="connect">Connect</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="pair">Pair</string>
+    <string name="help">Help</string>
+    <string name="pair_device">Pair Device</string>
+    <string name="connect_device">Connect Device</string>
+    <string name="pair_key">Pair Key</string>
+    <string name="cancel">Cancel</string>
+    <string name="device_disconnected">Device Disconnected</string>
+    <string name="ip_address">IP Address</string>
+    <string name="port">Port</string>
+    <string name="custom_commands">Custom Commands</string>
+    <string name="configure_button">Configure Button %d</string>
+    <string name="button_label">Button Label</string>
+    <string name="adb_command">ADB Command</string>
+    <string name="save">Save</string>
+    <string name="reset">Reset</string>
+    <string name="long_press_to_configure">Long press to configure button %d</string>
+    <string name="qr_code">QR Code</string>
+</resources>
