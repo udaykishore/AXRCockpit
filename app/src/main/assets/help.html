@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AXRCockpit - Help</title>
+    <link href="bootstrap-5.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.min.css">
+    <link rel="stylesheet" href="Pretendard-1.3.9/web/variable/pretendardvariable.css"/>
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+        }
+
+        .help-section {
+            padding: 2rem 0;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .card {
+            transition: transform 0.3s ease;
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .nav-link {
+            color: #0d6efd !important;
+            font-weight: 500;
+        }
+
+        .nav-link:hover {
+            color: #0b5ed7 !important;
+        }
+
+        .card-image-container {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            position: relative;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .card-image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        #btn-back-to-top {
+          position: fixed;
+          bottom: 1rem;
+          right: 2rem;
+          display: none;
+        }
+    </style>
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light mt-4">
+    <div class="container">
+        <h1 class="mb-0">AXRCockpit</h1>
+    </div>
+</nav>
+
+<div class="container mt-4">
+    <!-- Help Sections -->
+    <div class="row">
+        <!-- App Function Intro Section -->
+        <div class="col-lg-3 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-info-circle me-2"></i>Introduction</h5>
+                    <a href="#app-intro" class="nav-link">Learn More →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Connection Order Section -->
+        <div class="col-lg-3 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-network-wired me-2"></i>Connection Steps</h5>
+                    <a href="#connection-order" class="nav-link">Learn More →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reconnect Section -->
+        <div class="col-lg-3 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-redo-alt me-2"></i>Reconnection</h5>
+                    <a href="#reconnect" class="nav-link">Learn More →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Troubleshooting Section -->
+        <div class="col-lg-3 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-exclamation-circle me-2"></i>Troubleshooting
+                    </h5>
+                    <a href="#troubleshooting" class="nav-link">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Section Contents -->
+<section id="app-intro" class="help-section mt-5">
+    <div class="container">
+        <h2>Introduction</h2>
+        <div class="row mt-4 mb-3">
+            <div class="col-md-12">
+                <div class="card mb-3">
+                    <div class="card-body p-4">
+                        <p class="card-text">
+                            • <b style='color:darkblue'>AXRCockpit</b> is an app that allows you to wirelessly connect an HMD and a tablet to perform functions such as screen mirroring, app execution/termination, and debugging.<br>
+                            • <b style='color:darkblue'>Pairing:</b> The process of registering a tablet with the HMD.<br>
+                            • <b style='color:darkblue'>Connect:</b> The process of connecting the HMD and the tablet.<br>
+                            • <b style='color:darkblue'>Mirroring:</b> When the HMD and tablet are connected, the HMD's screen is displayed in real-time at that location.<br>
+                            • <b style='color:darkblue'>Console:</b> After connecting the HMD and tablet, you can remotely operate the HMD using shell commands.<br>
+                        <div class="card-image-container">
+                            <img src="images/screenshot.jpg">
+                        </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="connection-order" class="help-section mt-5">
+    <div class="container">
+        <h2>Connection Steps</h2>
+        <div class="row mt-4 mb-3">
+            <div class="col-md-12">
+                <!-- Pairing Card -->
+                <div class="card mb-3">
+                    <div class="card-body p-4">
+                        <h5 class="card-title">1. Pairing</h5>
+                        <p class="card-text">
+                            • This is a one-time process to connect the HMD and the tablet.<br>
+                            • <b style='color:red'>The HMD and tablet must be connected to the same Wi-Fi network.</b><br>
+                            1. <b style='color:darkblue'>After wearing the HMD</b>, select [Settings - Developer options - Wireless debugging].<br>
+                            2. Press "Disabled" to change it to <b>"Enabled"</b>.<br>
+                        <div class="card-image-container">
+                            <img src="images/wireless_debugging_hmd.jpg">
+                        </div>
+                        3. Select "Pair device with pairing code".<br>
+                        <div class="card-image-container">
+                            <img src="images/pairing_hmd.jpg">
+                        </div>
+                        4. <b style='color:darkblue'>After launching the AXRCockpit app on the tablet</b>, select the PAIR button.<br>
+                        5. Enter the IP, Port, and Pair key displayed on the HMD into the tablet and select Yes.<br>
+                        <div class="card-image-container">
+                            <img src="images/pairing_tablet.jpg">
+                        </div>
+                        6. Pairing is complete when the "Paring successful!" toast pop-up appears on the tablet.<br>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Connect Card -->
+                <div class="card">
+                    <div class="card-body p-4">
+                        <h5 class="card-title">2. Connect</h5>
+                        <p class="card-text">
+                            • This is the process to connect the HMD and tablet after pairing is complete.<br>
+                            1. <b style='color:darkblue'>After wearing the HMD</b>, go to the [Settings - Developer options - Wireless debugging] menu.<br>
+                            2. Check the IP and Port displayed on the screen.<br>
+                        <div class="card-image-container">
+                            <img src="images/connect_hmd.jpg">
+                        </div>
+                        3. <b style='color:darkblue'>After launching the AXRCockpit app on the tablet</b>, select the CONNECT button.<br>
+                        5. Enter the IP and Port displayed on the HMD into the tablet and select Yes.<br>
+                        <div class="card-image-container">
+                            <img src="images/connect_tablet.jpg">
+                        </div>
+                        6. The connection is complete when the "Connected!" toast pop-up appears on the tablet.<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="reconnect" class="help-section mt-5">
+    <div class="container">
+        <h2>Reconnection</h2>
+        <div class="row mt-4 mb-3">
+            <div class="col-md-12">
+                <!-- Pairing Card -->
+                <div class="card mb-3">
+                    <div class="card-body p-4">
+                        <p class="card-text">
+                            • After pairing the HMD and tablet, you can reconnect by pressing the Connect button.<br>
+                            • <b style='color:red'>The HMD and tablet must be connected to the same Wi-Fi network.</b><br>
+                            1. <b style='color:darkblue'>After wearing the HMD</b>, select [Settings - Developer options - Wireless debugging].<br>
+                            2. Press "Disabled" to change it to <b>"Enabled"</b>.<br>
+                        <div class="card-image-container">
+                            <img src="images/wireless_debugging_hmd.jpg">
+                        </div>
+                        3. <b style='color:darkblue'>After wearing the HMD</b>, go to the [Settings - Developer options - Wireless debugging] menu.<br>
+                        4. Check the IP and Port displayed on the screen.<br>
+                        <div class="card-image-container">
+                            <img src="images/connect_hmd.jpg">
+                        </div>
+                        5. <b style='color:darkblue'>After launching the AXRCockpit app on the tablet</b>, select the CONNECT button.<br>
+                        6. Enter the IP and Port displayed on the HMD into the tablet and select Yes.<br>
+                        <div class="card-image-container">
+                            <img src="images/connect_tablet.jpg">
+                        </div>
+                        7. The connection is complete when the "Connected!" toast pop-up appears on the tablet.<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="troubleshooting" class="help-section mt-5">
+    <div class="container">
+        <h2>Troubleshooting</h2>
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">"Paring failed" during Pairing</h5>
+                <p class="card-text">
+                    • Check if the HMD and tablet are connected to the same Wi-Fi network.<br>
+                    • Check if the "Pair device with pairing code" pop-up on the HMD has not been closed.<br>
+                    • Go to the Recent menu on the tablet, close the app, and then restart it.
+                </p>
+            </div>
+        </div>
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">"Not connected!" when selecting a button</h5>
+                <p class="card-text">
+                    • Check the Paring and Connect status between the HMD and the tablet.
+                </p>
+            </div>
+        </div>
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">"Connected!" then "Disconnected!" when selecting the Connect button</h5>
+                <p class="card-text">
+                    • Go to the Recent menu on the tablet, close the app, and then restart it.<br>
+                    • Check if the same pop-up appears after connecting.<br>
+                    • If the same pop-up appears, reboot the HMD and try again.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Bootstrap JS -->
+<script src="bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js"></script>
+<button type="button" class="btn btn-secondary btn-floating btn-lg" id="btn-back-to-top"
+        onclick="scrollToTop()">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+    window.addEventListener('scroll', function() {
+        const button = document.getElementById("btn-back-to-top");
+        if (window.scrollY > 200) {
+            button.style.display = 'block';
+        } else {
+            button.style.display = 'none';
+        }
+    });
+
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+</script>
+</body>
+</html>
